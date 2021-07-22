@@ -1,29 +1,29 @@
-# def get_name(person):
-#    return person["name"]
+def get_name(person):
+   return person["name"]
 
-# def get_favourite_tv_show(person):
-#     return person["favourites"]["tv_show"]
+def get_favourite_tv_show(person):
+    return person["favourites"]["tv_show"]
 
-# def likes_to_eat(person, food):
-#     if food in person["favourites"]["snacks"]:
-#         return True
-#     else:
-#         return False
+def likes_to_eat(person, food):
+    if food in person["favourites"]["snacks"]:
+        return True
+    else:
+        return False
 
-# def add_friend(person, new_friend):
-#     person["friends"].append(new_friend)
-#     print(len(person["friends"]))
+def add_friend(person, new_friend):
+    person["friends"].append(new_friend)
+    print(len(person["friends"]))
 
-# def remove_friend(person, remove_friend):
-#     person["friends"].remove(remove_friend)
-#     print(len(person["friends"]))
+def remove_friend(person, remove_friend):
+    person["friends"].remove(remove_friend)
+    print(len(person["friends"]))
 
 
-# def total_money(thingy):
-#     total_monies = 0
-#     for thing in thingy:
-#         total_monies += thing["monies"]
-#     return total_monies
+def total_money(thingy):
+    total_monies = 0
+    for thing in thingy:
+        total_monies += thing["monies"]
+    return total_monies
 
 
 def l_money(giver, reciever, amount):

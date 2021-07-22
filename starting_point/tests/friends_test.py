@@ -64,52 +64,52 @@ class TestFriends(unittest.TestCase):
 
 
   # 1. For a given person, return their name
-  # def test_getting_name(self):
-  #   result = get_name(self.person1)
-  #   self.assertEqual("Shaggy", result)
+  def test_getting_name(self):
+    result = get_name(self.person1)
+    self.assertEqual("Shaggy", result)
 
   # 2. For a given person, return their favourite tv show
   # (e.g. the function favourite_tv_show(self.person2) should return the string "Baywatch")
   # @unittest.skip("delete this line to run the test")  
-  # def test_get_favourite_tv_show(self):
-  #   result = get_favourite_tv_show(self.person2)
-  #   self.assertEqual("Baywatch", result)
+  def test_get_favourite_tv_show(self):
+    result = get_favourite_tv_show(self.person2)
+    self.assertEqual("Baywatch", result)
 
 
   # 3. For a given person, check if they like a particular food
   # (e.g. the function likes_to_eat(self.person2, "bread") should return True, likes_to_eat(self.person3, "spinach") should return False)
   # @unittest.skip("delete this line to run the test")
-  # def test_person_likes_food__True(self):
-  #   self.assertEqual(True, likes_to_eat(self.person2, "bread"))
+  def test_person_likes_food__True(self):
+    self.assertEqual(True, likes_to_eat(self.person2, "bread"))
 
   # @unittest.skip("delete this line to run the test")
-  # def test_person_likes_food__False(self):
-  #   self.assertEqual(False, likes_to_eat(self.person3, "spinach"))
+  def test_person_likes_food__False(self):
+    self.assertEqual(False, likes_to_eat(self.person3, "spinach"))
 
 
   # 4. For a given person, add a new name to their list of friends
   # (e.g. the function add_friend(self.person2, "Scrappy-Doo") should add Scrappy-Doo to the friends.)
   # (hint: This function should not return anything. After the function call, check for the length of the friends array to test it!)
   # @unittest.skip("delete this line to run the test")
-  # def test_add_friend(self):
-  #   add_friend(self.person2, "Scrappy-Doo")
-  #   self.assertEqual(2, len(self.person2["friends"]))
+  def test_add_friend(self):
+    add_friend(self.person2, "Scrappy-Doo")
+    self.assertEqual(2, len(self.person2["friends"]))
 
 
   # 5. For a given person, remove a specific name from their list of friends
   # (hint: Same as above, testing for the length of the array should be sufficient)
   # @unittest.skip("delete this line to run the test")
-  # def test_remove_friend(self):
-  #   add_friend(self.person2, "Scrappy-Doo")
-  #   remove_friend(self.person2, "Fred")
-  #   self.assertEqual(1, len(self.person2["friends"]))
+  def test_remove_friend(self):
+    add_friend(self.person2, "Scrappy-Doo")
+    remove_friend(self.person2, "Fred")
+    self.assertEqual(1, len(self.person2["friends"]))
 
 
-  # # 6. Find the total of everyone's money
-  # # (hint: use the self.people array, remember how we checked the total number of eggs yesterday?)
-  # # @unittest.skip("delete this line to run the test")
-  # def test_total_money(self):
-  #   self.assertEqual(143, total_money(self.people))
+  # 6. Find the total of everyone's money
+  # (hint: use the self.people array, remember how we checked the total number of eggs yesterday?)
+  # @unittest.skip("delete this line to run the test")
+  def test_total_money(self):
+    self.assertEqual(143, total_money(self.people))
 
 
   # 7. For two given people, allow the first person to loan a given value of money to the other
