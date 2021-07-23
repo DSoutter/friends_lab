@@ -32,8 +32,21 @@ def l_money(giver, reciever, amount):
     else:
         giver["monies"] -= amount
         reciever["monies"] += amount
-    # return giver["monies"], reciever["monies"]
 
 
 # locate giver money. Minus amount from their monies.
 # locate reciever money. Add amount to their monies. 
+
+def all_favourite_foods(thingy):
+    all_foods = []
+    for thing in thingy:
+        all_foods.extend(thing["favourites"]["snacks"])
+    return all_foods
+
+
+def find_no_friendends(people):
+    no_mates = []
+    for person in people:
+        if len(person["friends"]) == 0:
+            no_mates.append(person)
+    return no_mates
